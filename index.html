@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Giovanni Trevisan / @gitrevizzo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.9.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Giovanni Trevisan</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.youtube.com/channel/UCuSY1wT7za4ycvelPvp5BDw" class="youtube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.instagram.com/gitrevizzo/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/giovanni-trevisan-ab609514a/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://false-variraptor-378.notion.site/Resumo-Profissional-0da1af7b0531499886695a8842b53ca9" class="notion"><i class="bi bi-sticky-fill"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house"></i> <span
+                id="home-menu">Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bi bi-file-earmark-person"></i> <span
+                id="profile-menu">Profile</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-person-check-fill"></i> <span
+                id="skills-menu">Skills</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bi bi-person-workspace"></i> <span
+                id="resume-menu">Resume</span></a></li>
+          <!-- <li><a href="#portfolio" class="nav-link scrollto"><i
+                class="bx bx-book-content"></i><span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+          <li><a href="https://giovannitrevisan.github.io/linktree/" target="_blank" class="nav-link"> <i class="bi bi-box-arrow-up-right"></i><span
+                id="linktree-menu">Linktree </span></a></li>
+        </ul>
+        <div class="row">
+          <a id="eng-translate" href="#eng" class="active col-6" data-reload> <img class="flag-icon"
+              src="data:image/png;base64,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">
+            ENG</a>
+          <a id="pt-translate" href="#pt" data-reload class=" col-6"><img class="flag-icon"
+              src="data:image/png;base64,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">
+            PT</a>
+        </div>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Giovanni Trevisan</h1>
+      <p><span id="i-am">Desenvolvedor</span> <span class="typed specialist" data-typed-items=".NET, Fullstack"></span>
+        <span id="developer-text"></span>
+      </p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 id="profile-title">Profile</h2>
+          <p id="profile-text">
+            I've been a Developer for 4 years, I'm 22 years old and I have a great
+            passion for programming and development, I'm very interested in new
+            technologies. I’m able to effectively self-manage during independent
+            projects, as well as collaborate as part of a productive team. I’m
+            proficient in an assortment of technologies, including .NET C#, IIS and
+            Microsoft SQL Server.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-lg-10 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3 id="h3-apresetation">.NET &amp; Fullstack Developer</h3>
+
+            <div class="row m-3">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="birthday">Birthday:</strong> <span>02 Apr
+                      2000</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="city">City:</strong> <span>Barueri, Brasil</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="age">Age:</strong> <span>22</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong id="email">Email:</strong>
+                    <span>gitrevizzo194@gmail.com</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 id="skills-title">Skills</h2>
+          <p id="skills-text">Over the years I have acquired some proficiencies in the area of ​​development, some of
+            which I master more than others.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">C# .NET <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">HTML & CSS <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">GIT <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">API Development <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Javascript <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Typescript <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">React <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">API Testing <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Angular <i class="val">20%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 id="resume-title">Resume</h2>
+
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 id="professionalExperience" class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>.Net Developer</h4>
+              <h5>2021 - Present</h5>
+              <p><em>Wiz Soluções, Brasilia, Brasil </em></p>
+              <ul>
+                <li id="wiz-param-1">Development of a Product to improve the system and user experience, in
+                  addition to integrating systems and products from Consortiums for large
+                  companies such as Santander, Caixa Seguros and others. </li>
+                <li id="wiz-param-2">Improvement of Legacy APIs or creating new APIs (.Net Core 3.1 and
+                  Later) and helping with front-end development (Angular) </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>.Net Developer</h4>
+              <h5>2019 – 2022</h5>
+              <p><em>LG Lugar de Gente, São Paulo, Brasil</em></p>
+              <ul>
+                <li id="lg-param-1">Full-stack developer with a focus on Back-end (C# .NET). along with a
+                  team of development in support and improvement of the company's LMS
+                  (Learning Management System) tool for its customers such as Anglogold
+                  Ashanti, Riachuelo, Fast Shop among others. </li>
+                <li id="lg-param-2">Effectively coded software changes and alterations based on specific
+                  design specifications.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Fullstack Developer</h4>
+              <h5>2018 – 2019</h5>
+              <p><em>Infopack Sistemas, São Paulo, Brasil</em></p>
+              <ul>
+                <li id="infop-param-1">Full-stack Developer (PHP) development of the company's system. Worked
+                  on ERP (Enterprise Resource Planning) development. </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 id="education" class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4 id="mba">MBA in Full Stack Developer Design, Engineering &amp; Deployment</h4>
+              <h5>2022 – 2023</h5>
+              <p><em>Faculdade de Informática e Administração Paulista (FIAP), Brasil</em></p>
+
+            </div>
+            <div class="resume-item">
+              <h4 id="graduation">Graduation in Digital Games</h4>
+              <h5>2019 - 2020</h5>
+              <p><em>Faculdade de Informática e Administração Paulista (FIAP), Brasil</em></p>
+
+            </div>
+            <div class="resume-item">
+              <h4 id="technical">IT technical course</h4>
+              <h5>2015 – 2018</h5>
+              <p><em>Fundação Instituto Tecnológico de Osasco (FITO), Brasil</em></p>
+
+            </div>
+
+            <h3 id="courses" class="resume-title">Courses</h3>
+            <div class="resume-item">
+              <h4>Responsive Web Developing</h4>
+              <h5>2021</h5>
+              <p><em>Faculdade de Informática e Administração Paulista (FIAP), Brasil</em></p>
+
+            </div>
+            <div class="resume-item">
+              <h4>Web & Game Developing</h4>
+              <h5>2020</h5>
+              <p><em>Faculdade de Informática e Administração Paulista (FIAP), Brasil</em></p>
+
+            </div>
+            <div class="resume-item">
+              <h4>Unity Mobile</h4>
+              <h5>2020</h5>
+              <p><em>Faculdade de Informática e Administração Paulista (FIAP), Brasil</em></p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
+            in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Portfolio Section -->
+
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/translate.js"></script>
+
+</body>
+
+</html>
