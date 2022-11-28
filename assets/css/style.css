@@ -79,12 +79,12 @@ h6 {
   transition: all 0.5s;
   padding: 0 15px;
   overflow-y: auto;
-
+  
   background-color: rgba(16 18 27 / 85%);
   border-right: 1px rgba(113 119 144 / 25%) solid;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  
+
 }
 
 #header .profile img {
@@ -194,6 +194,28 @@ h6 {
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
   color: #b6b6b6;
+}
+
+.background-menu-helper{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+
+  z-index: 10;
+
+  transition: ease-in-out 0.3s;
+
+}
+
+.background-menu-helper.active{
+  
+  background-color: rgba(16 18 27 / 85%);
+  border-right: 1px rgba(113 119 144 / 25%) solid;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 /* Mobile Navigation */
