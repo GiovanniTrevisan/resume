@@ -79,7 +79,7 @@ h6 {
   transition: all 0.5s;
   padding: 0 15px;
   overflow-y: auto;
-  
+
   background-color: rgba(16 18 27 / 85%);
   border-right: 1px rgba(113 119 144 / 25%) solid;
   backdrop-filter: blur(20px);
@@ -196,7 +196,7 @@ h6 {
   color: #b6b6b6;
 }
 
-.background-menu-helper{
+.background-menu-helper {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -210,8 +210,8 @@ h6 {
 
 }
 
-.background-menu-helper.active{
-  
+.background-menu-helper.active {
+
   background-color: rgba(16 18 27 / 85%);
   border-right: 1px rgba(113 119 144 / 25%) solid;
   backdrop-filter: blur(5px);
@@ -240,8 +240,9 @@ h6 {
   cursor: pointer;
 }
 
-.flag-icon{
-  width: 30px; margin: auto 10px;
+.flag-icon {
+  width: 30px;
+  margin: auto 10px;
 }
 
 .mobile-nav-active {
@@ -1133,5 +1134,66 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Languages
+--------------------------------------------------------------*/
+
+.languages-menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  padding: 20px;
+  border-radius: 20px;
+
+  background-color: rgba(16 18 27 / 85%);
+  border: 1px rgba(113 119 144 / 25%) solid;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.cv-menu {
+  position: fixed;
+  top: 10px;
+  right: 230px;
+  z-index: 10;
+  padding: 23px;
+  border-radius: 20px;
+
+  background-color: rgba(16 18 27 / 85%);
+  border: 1px rgba(113 119 144 / 25%) solid;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.languages-menu a,
+i {
+  color: #c8c8c8;
+}
+
+.cv-menu a,
+i {
+  color: rgb(255, 255, 255);
+}
+
+.languages-menu .active {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .languages-menu {
+    right: 70px;
+    padding: 10px 20px;
+    border-radius: 14px;
+  }
+
+  .cv-menu {
+    right: 290px;
+    padding: 13px 20px;
+    border-radius: 14px;
   }
 }
