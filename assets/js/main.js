@@ -72,7 +72,14 @@
     onscroll(document, toggleBacktotop)
   }
 
+  const prefersColorScheme = window.matchMedia('(prefers-color-scheme: dark)');
   const darkThemeCheckbox = select("#dark-theme-button");
+
+  if (!prefersColorScheme.matches) {
+    toggleDarkTheme();
+    darkThemeCheckbox.checked = prefersColorScheme;
+  }
+  
   if (darkThemeCheckbox) {
     on('change', '#dark-theme-button', function (e) {
       toggleDarkTheme();
