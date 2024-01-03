@@ -13,6 +13,10 @@ body {
   color: #272829;
 }
 
+main{
+  background-color: #fff;
+}
+
 a {
   color: #b6b6b6;
   text-decoration: none;
@@ -473,6 +477,10 @@ section {
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+}
+
+.val {
+  color: #050d18;
 }
 
 .skills .progress-bar-wrap {
@@ -1169,6 +1177,17 @@ section {
   -webkit-backdrop-filter: blur(20px);
 }
 
+.dark-theme-menu{
+  position: fixed;
+  top: 20px;
+  right: 333px;
+  z-index: 10;
+}
+
+#dark-theme-button{
+  margin: 10px;
+}
+
 .languages-menu a,
 i {
   color: #c8c8c8;
@@ -1179,10 +1198,16 @@ i {
   color: rgb(255, 255, 255);
 }
 
+.cv-menu- a,
+i {
+  color: rgb(255, 255, 255);
+}
+
 .languages-menu .active {
   color: rgb(255, 255, 255);
   font-weight: 600;
 }
+
 
 @media (max-width: 1200px) {
   .languages-menu {
@@ -1196,4 +1221,12 @@ i {
     padding: 13px 14px;
     border-radius: 14px;
   }
+
+  .dark-theme-menu{
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    z-index: 10;
+  }
+
 }

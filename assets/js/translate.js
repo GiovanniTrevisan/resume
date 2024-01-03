@@ -33,15 +33,38 @@ var lgParam1 = document.getElementById("lg-param-1");
 var lgParam2 = document.getElementById("lg-param-2");
 var infopParam1 = document.getElementById("infop-param-1");
 
-const currentDate = new Date().getFullYear();
+const calculateAge = (dateOfBirth) => {
+    const currentDate = new Date();
+    const [currentYear, currentMonth, currentDay] = [currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()];
+    const [birthYear, birthMonth, birthDay] = [dateOfBirth.getFullYear(), dateOfBirth.getMonth(), dateOfBirth.getDate()];
+    let age = currentYear - birthYear;
 
-const dateBorn = new Date(2000, 4, 2);
-const ageGi = currentDate - dateBorn.getFullYear();
+    if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
+        age--; // Ainda não completou o aniversário deste ano
+    }
 
+    return age;
+};
+
+const calculateYearsOfWork = (startDate) => {
+    const currentDate = new Date();
+    const [currentYear, currentMonth, currentDay] = [currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()];
+    const [startYear, startMonth, startDay] = [startDate.getFullYear(), startDate.getMonth(), startDate.getDate()];
+    let yearsWorked = currentYear - startYear;
+
+    if (currentMonth < startMonth || (currentMonth === startMonth && currentDay < startDay)) {
+        yearsWorked--; // Ainda não completou um ano de trabalho este ano
+    }
+
+    return yearsWorked;
+};
+
+const dateBorn = new Date(2000, 4, 2); 
 const dateStartWork = new Date(2018, 11, 1);
-const ageWorking = currentDate - dateStartWork.getFullYear();
+const ageGi = calculateAge(dateBorn);
 
 ageValue.textContent = ageGi;
+yearsWorking = calculateYearsOfWork(dateStartWork);
 
 var language = {
     eng: {
@@ -55,7 +78,7 @@ var language = {
         iAmText: "I'm ",
         developerText: " Developer",
         profiletitle: "Profile",
-        profiletext: "I've been a Developer for " + ageWorking + " years, I'm " + ageGi + " years old and I have a great passion for programming and development, I'm very interested in new technologies. I’m able to effectively self-manage during independent projects, as well as collaborate as part of a productive team. I’m    proficient in an assortment of technologies, including .NET C#, IIS and Microsoft SQL Server.",
+        profiletext: "I've been a Developer for " + yearsWorking + " years, I'm " + ageGi + " years old and I have a great passion for programming and development, I'm very interested in new technologies. I’m able to effectively self-manage during independent projects, as well as collaborate as part of a productive team. I’m    proficient in an assortment of technologies, including .NET C#, IIS and Microsoft SQL Server.",
         apresetationText: ".NET & Fullstack Developer",
         skillsTitle: "Skills",
         birthday: "Birthday:",
@@ -89,7 +112,7 @@ var language = {
         iAmText: "Desenvolvedor",
         developerText: "",
         profiletitle: "Sobre Mim",
-        profiletext: "Sou Desenvolvedor há " + ageWorking + " anos, tenho " + ageGi + " anos e tenho uma grande paixão por programação e desenvolvimento, me interesso muito por novas tecnologias. Sou capaz de me autogerenciar de forma eficaz durante projetos independentes, bem como colaborar como parte de uma equipe produtiva. Sou proficiente em uma variedade de tecnologias, incluindo .NET C#, IIS e Microsoft SQL Server.",
+        profiletext: "Sou Desenvolvedor há " + yearsWorking + " anos, tenho " + ageGi + " anos e tenho uma grande paixão por programação e desenvolvimento, me interesso muito por novas tecnologias. Sou capaz de me autogerenciar de forma eficaz durante projetos independentes, bem como colaborar como parte de uma equipe produtiva. Sou proficiente em uma variedade de tecnologias, incluindo .NET C#, IIS e Microsoft SQL Server.",
         apresetationText: "Desenvolvedor .NET & Fullstack",
         skillsTitle: "Habilidades",
         birthday: "Dia de Nascimento:",
