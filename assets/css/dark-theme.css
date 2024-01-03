@@ -28,15 +28,6 @@
         var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
 }
 
-.toggle {
-    z-index: 1;
-}
-
-.toggle:checked~.background {
-    --bg: white;
-}
-
-
 .dark-theme {
     background-color: #121519;
     color: #bbb;
@@ -50,7 +41,8 @@
     color: #bbb;
 }
 
-.dark-theme .skill {
+.dark-theme .skill,
+.dark-theme h3 {
     color: #bbb !important;
 }
 
@@ -62,6 +54,23 @@
     background-color: #62676b;
 }
 
-h3 {
+.dark-theme i {
     color: #bbb !important;
+}
+
+.dark-theme h4 {
+    color: #9C9D9D !important;
+}
+
+.dark-theme .resume .resume-item h5 {
+    background: #191E22;
+}
+
+.dark-theme .resume .resume-item::before {
+    background: #121519;
+    border: 2px solid #615C54;
+}
+
+.dark-theme .resume-item {
+    border-left-color: #615C54;
 }

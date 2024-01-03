@@ -22,8 +22,12 @@
   }
 
   const toggleDarkTheme = () => {
+    const bodyElement = select("body");
     const mainElement = select("#main");
+    const headerElement = select("#header");
     mainElement.classList.toggle("dark-theme");
+    headerElement.classList.toggle("dark-theme");
+    bodyElement.classList.toggle("dark-theme");
   }
 
   const onscroll = (el, listener) => {
