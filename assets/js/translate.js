@@ -16,6 +16,7 @@ var ageValue = document.getElementById("ageValue");
 var skillsText = document.getElementById("skills-text");
 var resumeTitle = document.getElementById("resume-title");
 var education = document.getElementById("education");
+var courses = document.getElementById("courses");
 var professionalExperience = document.getElementById("professionalExperience");
 var graduation = document.getElementById("graduation");
 var mba = document.getElementById("mba");
@@ -87,6 +88,7 @@ var language = {
         skillsText: "Over the years I have acquired some proficiencies in the area of ​​development, some of which I master more than others.",
         resumeTitle: "Resume",
         education: "Education",
+        courses: "Courses",
         professionalExperience: "Professional Experience",
         mba: "MBA IN FULL STACK DEVELOPER DESIGN, ENGINEERING & DEPLOYMENT",
         graduation: "GRADUATION IN DIGITAL GAMES",
@@ -121,6 +123,7 @@ var language = {
         skillsText: "Ao longo dos anos adquiri algumas competências na área do desenvolvimento, algumas das quais domino mais do que outras.",
         resumeTitle: "Resumo Profissional",
         education: "Escolaridade",
+        courses: "Cursos",
         professionalExperience: "Experiência Professional",
         mba: "MBA EM FULL STACK DEVELOPER DESIGN, ENGINEERING & DEPLOYMENT",
         graduation: "GRADUAÇÃO EM JOGOS DIGITAIS",
@@ -160,6 +163,7 @@ var setLanguage = () => {
         skillsText.textContent = language.pt.skillsText;
         resumeTitle.textContent = language.pt.resumeTitle;
         education.textContent = language.pt.education;
+        courses.textContent = language.pt.courses;
         professionalExperience.textContent = language.pt.professionalExperience;
         graduation.textContent = language.pt.graduation;
         mba.textContent = language.pt.mba;
@@ -195,6 +199,7 @@ var setLanguage = () => {
         skillsText.textContent = language.eng.skillsText;
         resumeTitle.textContent = language.eng.resumeTitle;
         education.textContent = language.eng.education;
+        courses.textContent = language.eng.courses;
         professionalExperience.textContent = language.eng.professionalExperience;
         graduation.textContent = language.eng.graduation;
         mba.textContent = language.eng.mba;
