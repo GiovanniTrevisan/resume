@@ -13,7 +13,7 @@ body {
   color: #272829;
 }
 
-main{
+main {
   background-color: #fff;
 }
 
@@ -1177,14 +1177,14 @@ section {
   -webkit-backdrop-filter: blur(20px);
 }
 
-.dark-theme-menu{
+.dark-theme-menu {
   position: fixed;
   top: 20px;
   right: 333px;
   z-index: 10;
 }
 
-#dark-theme-button{
+#dark-theme-button {
   margin: 10px;
 }
 
@@ -1221,7 +1221,7 @@ i {
     border-radius: 14px;
   }
 
-  .dark-theme-menu{
+  .dark-theme-menu {
     position: fixed;
     top: 70px;
     right: 10px;
